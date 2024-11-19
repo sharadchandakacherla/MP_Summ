@@ -1,0 +1,1 @@
+ls -l *.ann | awk '{if ( $5 > 0 ) { split($9,val,".") ;print val[1]}}' | wc -l
